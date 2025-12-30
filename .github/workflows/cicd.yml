@@ -68,7 +68,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: ["3.11"] # python-version: [ "3.11", "3.12", "3.13", "3.14"] #original - elasticsearch and opensearch not ready on python 3.12, 3.13, 3.14 yet
+        python-version: ["3.11", "3.12", "3.13", "3.14"] #original - elasticsearch and opensearch not ready on python 3.12, 3.13, 3.14 yet
         backend: ["elasticsearch8", "opensearch"]
 
     name: Python ${{ matrix.python-version }} testing with ${{ matrix.backend }}
