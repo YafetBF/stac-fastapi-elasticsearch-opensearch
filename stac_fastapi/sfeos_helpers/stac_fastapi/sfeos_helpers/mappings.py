@@ -28,7 +28,7 @@ Function Naming Conventions:
 import os
 import json
 from typing import Any, Dict, Literal, Protocol
-import stac_fastapi.sfeos_helpers.stac_fastapi.sfeos_helpers.mappings_custom.mappings_custom as mappings_custom
+from stac_fastapi.sfeos_helpers.mappings_custom import mappings_custom
 
 from stac_fastapi.core.utilities import get_bool_env
 
