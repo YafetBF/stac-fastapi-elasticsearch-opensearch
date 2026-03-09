@@ -16,8 +16,8 @@ services:
       - ENVIRONMENT=local
       - WEB_CONCURRENCY=10
       # connection setting for external ES (Elastic Cloud)
-      - ES_API_KEY=TVZWRHZwd0JWR0RSNXZCclM5N2c6UUFBYXdzZFFScjJ3bGlyZ0Z2Wk5QUQ==
-      - ES_HOST=7fb7949f512e4823bb550f2d205ea7f0.europe-west1.gcp.cloud.es.io
+      - ES_API_KEY=key
+      - ES_HOST=host
       - ES_PORT=443
       - ES_SCHEME=https
       - ES_USE_SSL=true
