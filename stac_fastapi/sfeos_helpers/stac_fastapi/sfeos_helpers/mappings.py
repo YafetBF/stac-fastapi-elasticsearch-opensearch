@@ -213,7 +213,7 @@ ES_MAPPINGS_DYNAMIC_TEMPLATES = [
         "titles": {
             "match_mapping_type": "string",
             "match": "title",
-            "mapping": {"type": "text"},
+            "mapping": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
         }
     },
     # Projection Extension https://github.com/stac-extensions/projection

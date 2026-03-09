@@ -1,0 +1,17 @@
+{
+    "properties": {
+        "properties": {
+            "properties": {
+                "fao:well_known_area": {
+                    "type": "boolean"
+                },
+                "fao:recommended_order_by": {
+                    "type": "text"
+                },
+                "fao:primary_key": {
+                    "type": "text"
+                }
+            }
+        }
+    }
+}
