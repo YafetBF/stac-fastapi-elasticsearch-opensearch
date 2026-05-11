@@ -24,12 +24,16 @@ services:
       - DATABASE_REFRESH=true
       - ENABLE_COLLECTIONS_SEARCH_ROUTE=true
       - ENABLE_CATALOGS_ROUTE=true
+      - STAC_FASTAPI_ES_DYNAMIC_TEMPLATES_FILE=/app/dynamic-templates.json
+      - STAC_FASTAPI_ES_COLLECTIONS_DYNAMIC_MAPPING=false
+      - STAC_FASTAPI_ES_DYNAMIC_MAPPING=false
       - REDIS_ENABLE=true
       - REDIS_HOST=redis
       - REDIS_PORT=6379
     ports:
       - "8080:8080"
     volumes:
+      - ./custom-dynamic-templates.json:/app/dynamic-templates.json:ro
       - ./stac_fastapi:/app/stac_fastapi
       - ./scripts:/app/scripts
       - ./esdata:/usr/share/elasticsearch/data
